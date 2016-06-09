@@ -1,0 +1,33 @@
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %} - شباهنگ</title>
+	<meta name="description" content="{% if page.excerpt %} {{ page.description }} {% else %} {{ site.description }}{% endif %}">
+	<meta name="keywords" content="{% if page.excerpt %} {{ page.keywords }} {% else %}{{ site.keywords }}{% endif %}">	
+	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+	<meta name="google-site-verification" content="xeNirzDh7sqCRdlvuysBNwfe94mR_ihDRj_sFLVfVcE" />
+	<!-- <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}"> -->
+    <link rel='stylesheet' type='text/css' href='http://awebfont.ir/css?id=1776'>
+	 <link rel='stylesheet' type='text/css' href='http://awebfont.ir/css?id=1106'>
+    <link rel="stylesheet" type="text/css" href="{{"/static/css/bootstrap.min.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" type="text/css" href="{{ "/static/css/index.css" | prepend: site.baseurl }}">
+	<script type="text/javascript" src="{{ "/static/js/jquery-1.11.1.min.js" | prepend:site.baseurl }}"></script>
+	<script type="text/javascript" src="{{ "/static/js/bootstrap.min.js" | prepend:site.baseurl }}"></script>
+    <link rel="stylesheet" type="text/css" href="/static/css/monokai_sublime.min.css">
+	<link rel="alternate" href="http://shabahangir.com" hreflang="fa-ir" />
+	 <link rel="stylesheet" type="text/css" href="/static/css/clean-blog.css">
+	<script type="text/javascript" src="/static/js/highlight.min.js"></script>
+
+    <!--
+    <link rel="stylesheet" type="text/css" href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css">
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://apps.bdimg.com/libs/highlight.js/8.4/styles/monokai_sublime.min.css">
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/highlight.js/8.4/highlight.min.js"></script>
+    -->
+    
+	<script type="text/javascript" src="{{"/static/js/index.js" | prepend:site.baseurl}}"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+</head>
